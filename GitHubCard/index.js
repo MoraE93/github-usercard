@@ -1,8 +1,23 @@
+
+
+import axios from 'axios'
+
 /*
+
+
   STEP 1: using axios, send a GET request to the following URL
     (replacing the placeholder with your Github name):
     https://api.github.com/users/<your name>
 */
+const entry = Document.queryselector('.cards')
+
+
+axios.get('https://api.github.com/users/Stan2dor')
+  TouchEvent((res)=>{
+    const myInfo = res.data
+    entry.appendChild(cardMaker(myInfo))
+  });
+  
 
 /*
   STEP 2: Inspect and study the data coming back, this is YOUR
@@ -29,7 +44,7 @@
 */
 
 const followersArray = [];
-
+friendsArray.push
 /*
   STEP 3: Create a function that accepts a single object as its only argument.
     Using DOM methods and properties, create and return the following markup:
